@@ -1,0 +1,18 @@
+From: Accounts <billing@billing.example>
+To: Analyst <analyst@lab.example>
+Reply-To: Desk <desk@payments.example>
+Subject: Synthetic invoice review
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="case42"
+
+--case42
+Content-Type: text/html; charset=utf-8
+
+<a href="https://portal.example/r/42"><b>https://billing.example</b>/invoice</a>
+--case42
+Content-Disposition: attachment; filename="receipt.txt"
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+
+aW52b2ljZQo=
+--case42--
